@@ -1,0 +1,30 @@
+\documentclass{LU}
+
+\title{Bakalaura darba nosaukums}	   
+\thesistype{Bakalaura darbs}
+\author{Vārds Uzvārds}
+\studentid{xy00000}
+\supervisor{Vārds Uzvārds}
+\university{Latvijas Universitāte}
+\faculty{Fakultātes nosaukums}
+\location{Rīga}
+
+\begin{document}
+
+\maketitle
+\pagenumbering{gobble} 
+\tableofcontents
+
+%------------------------------------------------APZĪMĒJUMI---------------------------------------------------------
+\input{chapters/0citi/apzimejumi}
+\pagenumbering{arabic} % sākam numurēt lapas no apzīmējumu saraksta (3. pielikums iekš LU 03.02.2012, 1/38 ) 
+
+\pagestyle{plain}
+\input{chapters/1ievads/ievads}
+\input{chapters/2analize/analize}
+\input{chapters/3priekslikums/priekslikums}
+\input{chapters/4rokasgramata/rokasgramata}
+\input{chapters/5secinajumi/secinajumi}
+\input{chapters/6literatura/literatura}
+\input{chapters/7pielikumi/pielikumi}
+\end{document}
