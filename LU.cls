@@ -20,6 +20,9 @@
 \usepackage{color}
 \usepackage{nameref}
 \usepackage{hyperref}
+\usepackage{varioref}
+\usepackage{glossaries}
+\usepackage{pgfplots}
 \usepackage{cleveref}
 
 % saišu krāsas iekš PDF (atsaucēm, saturam, saitēm), [ja nemaldos tad gaumes lieta]
@@ -70,8 +73,8 @@
 \let \originalnumberline \numberline
 \def \numberline#1{\originalnumberline{#1.}} % saturā nodaļas ir 1.1. (punkts pēc cipara) (3. pielikums iekš LU 03.02.2012, 1/38 )
 
-% izmantotajai bibliotēkai. Var pagulēt par BibTex (ir pat tāda lieta kā _export_bibtex_ )
-\usepackage{natbib}
+\usepackage[square,numbers]{natbib}
+\bibliographystyle{abbrvnat}
 
 \usepackage{url}
 \usepackage{etoolbox}
@@ -93,35 +96,39 @@
 
 % Nodaļu nosaukumu labošana - aizdomas, ka šo var izdarīt labāk un pareizāk
 \usepackage{titlesec}
-\titleformat{\chapter}{\Huge\bfseries}{\thechapter.\hspace{10pt}}{0pt}{\Huge\bfseries\uppercase}
-\titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
-\titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
-\titlespacing{\chapter}{0cm}{2em}{2em} % Nodaļu virsraksat atstarpes no augšas un apakšas
+% \titleformat{\chapter}{\Huge\bfseries}{\thechapter.\hspace{10pt}}{0pt}{\Huge\bfseries\uppercase}
+% \titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
+% \titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
+% \titlespacing{\chapter}{0cm}{2em}{2em} % Nodaļu virsraksat atstarpes no augšas un apakšas
+\titleformat{\chapter}{\bfseries}{\thechapter.\hspace{12pt}}{0pt}{\bfseries\uppercase}
+\titleformat{\section}{\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\bfseries}{\thesubsection}{1em}{}
+\titlespacing{\chapter}{0cm}{2em}{2em}
 
 
 % pielikumiem
 \usepackage[toc]{appendix}
 
-% šis paredzēts, lai darbā varētu ievietot programmas koda fragmentus.
-\usepackage{listings} 
-\lstnewenvironment{code}[1][] % Koda pieraksta bloks \begin{code}[options] \end{code}. Labā lieta, ka šis bloks nedalās pa lapām, lai nebūtu puse vienā un puse otrā lapā.
-{
-    \noindent
-    \minipage{\linewidth}         
-    \vspace{0.5\baselineskip}
-    \lstset{    
-        basicstyle=\ttfamily\footnotesize,
-        backgroundcolor=\color{gray!10},
-        frame=single,
-        captionpos=b, 
-        tabsize=4,
-        extendedchars=true,
-        rulecolor=\color{black!30},
-        escapeinside={\%*}{*)},                
-        #1
-    }
-}
-{\endminipage}
+% % šis paredzēts, lai darbā varētu ievietot programmas koda fragmentus.
+% \usepackage{listings} 
+% \lstnewenvironment{code}[1][] % Koda pieraksta bloks \begin{code}[options] \end{code}. Labā lieta, ka šis bloks nedalās pa lapām, lai nebūtu puse vienā un puse otrā lapā.
+% {
+%     \noindent
+%     \minipage{\linewidth}         
+%     \vspace{0.5\baselineskip}
+%     \lstset{    
+%         basicstyle=\ttfamily\footnotesize,
+%         backgroundcolor=\color{gray!10},
+%         frame=single,
+%         captionpos=b, 
+%         tabsize=4,
+%         extendedchars=true,
+%         rulecolor=\color{black!30},
+%         escapeinside={\%*}{*)},                
+%         #1
+%     }
+% }
+% {\endminipage}
 
 
 
