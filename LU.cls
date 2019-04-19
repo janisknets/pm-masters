@@ -21,7 +21,7 @@
 \usepackage{nameref}
 \usepackage{hyperref}
 \usepackage{varioref}
-\usepackage{glossaries}
+\usepackage[acronym,toc]{glossaries}
 \usepackage{pgfplots}
 \usepackage{cleveref}
 
