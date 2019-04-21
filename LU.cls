@@ -24,6 +24,7 @@
 \usepackage[acronym,toc]{glossaries}
 \usepackage{pgfplots}
 \usepackage{cleveref}
+\usepackage{array}
 
 % saišu krāsas iekš PDF (atsaucēm, saturam, saitēm), [ja nemaldos tad gaumes lieta]
 \hypersetup{colorlinks=true, linkcolor=black, urlcolor=blue, citecolor=darkgray}
