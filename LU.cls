@@ -108,7 +108,7 @@
 
 
 % pielikumiem
-\usepackage[toc]{appendix}
+\usepackage[toc,page]{appendix}
 
 % % šis paredzēts, lai darbā varētu ievietot programmas koda fragmentus.
 % \usepackage{listings} 
