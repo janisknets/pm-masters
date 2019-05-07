@@ -46,9 +46,13 @@
 \setsansfont[Mapping=tex-text]{Arial}
 \newfontfamily\russianfont{Times New Roman}
 
+\usepackage{ragged2e}
 \usepackage{indentfirst}
 \setlength{\parindent}{1cm} % jaunas rindkopas atkāpe (5.2. iekš LU 03.02.2012, 1/38 )
-\setlength{\parskip}{3pt}
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{1.5}
+\sloppy
+\hbadness=99999
 
 \usepackage{setspace}
 \usepackage{varioref}
