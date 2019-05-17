@@ -1,3 +1,6 @@
+*.mpp
+**/images/*
+**/pdf/*
 *.acn
 *.acr
 *.alg

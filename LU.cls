@@ -57,6 +57,9 @@
 \usepackage{setspace}
 \usepackage{varioref}
 \usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage[final]{pdfpages}
+
 
 % atkal gaumes lieta, kā tiek noformētie šie fragmenti
 \theoremstyle{plain}
