@@ -1,12 +1,10 @@
 \section{Projekta alternatīvu sākotnējais risku izvērtējums}
 %2.5
-Atsauce uz pielikumiem - \ref{app:B_sakotnejie_riski} un \ref{app:C_sakotnejie_riski}
-%var vadīties pēc 11.2 no PMBOK
-\paragraph{}
 Iespējamie riski tika klasificēti pēc to izcelsmes vides, kas ir gan projekta ārējie, gan
 iekšējie riski. Tika noteikti šādi risku veidi abām alternatīvām:
+%TODO pielikt atsauci uz 11.2 no PMBOK 5th edition
 \begin{itemize}
-    \item Saimnieciskie jeb komerciālie riski – riski, kas saistītie ar finansēm, nekvalitatīvu darbu,
+    \item Saimnieciskie riski – riski, kas saistītie ar finansēm, nekvalitatīvu darbu,
 cenu izmaiņām, apdrošināšanas izmaksām, inflāciju;
     \item Tehniskie riski – riski, kas saistīti nekvalitatīviem materiāliem un iekārtām, nekvalitatīvu
 darba veikšanu;
@@ -15,19 +13,83 @@ nodokļu politika, nemieri valstī, administratīvie ierobežojumi;
     \item Dabas riski – riski, kas saistīti ar dažādām dabas kataklizmām (plūdi, zemestrīces, utml);
     \item Personāla riski – riski, kas saistīti ar personālu.
 \end{itemize}
-\paragraph{}
-Risku vērtēšanas princips,
-\paragraph{}
-Risku apkopojums pēc to veidiem - Saimnieciskie
-\paragraph{}
-Risku apkopojums pēc to veidiem - Tehniskie
-\paragraph{}
-Risku apkopojums pēc to veidiem - Tiesiskie
-\paragraph{}
-Risku apkopojums pēc to veidiem - Personāla
-\paragraph{}
-Apkopojums par riskiem
-\paragraph{}
-ievads nākošā sadaļā
+Riski tika sarindoti pēc to iespējas iestāties un ietekmes uz projektu. Jo lielāka iespēja,
+ka risks iestāsies vai jo lielāka būs ietekme ja risks iestāsies, jo augstāks būs vērtējums.
+Vērtējumi ir sadalīti trīs kategorijās zems, vidējs un augsts. Tiek arī piedāvātas potenciālās
+preventetīvās darbības.
+\par
+Abām alternatīvām tika noteikti riski \ref{app:B_sakotnejie_riski} un \ref{app:C_sakotnejie_riski} pielikumā.
+Kopā B alternatīvai tika identificēti 12 riski, kamēr C alternatīvai 13 riski. Šeit arī ir novērojams 
+abo projektu līdzība, līdz ar to vairāki riski ir attiecināmi uz abām alternatīvām.
+\par 
+Skatoties uz saimnieciskiem riskiem B alternatīvai ir viens zems un viens augsts risks. Pirmais risks attiecas
+uz iespējamo fonda dalībnieku izstāšanos, taču novērtēs kā zems, jo lielākais finansējums nāk no
+Accenture Latvia uzņēmuma, kurš tieši vēlas šo projektu realizēt. Lai mazinātu šo risku tiek ieteikts
+viecināt fonda dalībnieku sapratni par šī projekta nozīmību valsts mērogā. Projekta budžeta pārsniegšanas
+riskam tiek ieteikts izmantot rūpīgu tēriņu uzskaiti. It sevišķi lielu uzmanību jāpievērš video
+filmēšanas izmaksām, jo to svārstība var būtiski ietekmēt projekta budžetu, līdz ar to šis risks
+tika novērtēs ar augustu riska pakāpi. C alternatīvia ir līdzīgi pirmie divi riski, taču vēl ir
+identificēti papildus viens zems un viens vidējs risks, kopā veidojot četrus dotajā risku veidā.
+Cilvēku intereses trūkums ir viens no paredzētiem riskiem, tas ir novērtēs kā zems, lai novērstu
+šo risku, tiek ieteikts sadarboties ar valstiskām organizācijām, konkrēti ar \acrshort{nva}, kas
+ļautu izmantot šos kursus un reklamēt tos bez liekiem ieguldījumiem reklāmas kampaņās. Vidēji
+novērtētais risks runā par izveidoto materiālu neatbilstību cilvēku vajadzībām, lai to novērstu
+autors iesaka veikt \glspl{designThinking} sesijas ar potenciāliem gala lietotājiem.
+\par
+Tehniskie riski abām alternatīvām ir identiski un to novēršana un vērtējumi arī ir vienādi.
+Abi vidējie riski var būt novērsti veico kvaliatīvu analīzi izpētes fāzē par doto stāvokli
+eksistējošai tīmekļa vietnei. Ir jāizvērtē cik kvalitatīva bija iepriekš izstrādāta vietne.
+Cik apjomīgus uzlabojumus būtu jāveic un cik eksistējošā vietne ir gata jaunu mācību materiālu
+izvietošanai. Mākoņpakalpojumu sadārdzināšanās risks ir novērtēts kā zems, jo sadārdzinājums
+spēcīgi neitekmētu kopējās izmaksas un dotā tirgus situācija vairāk ir tendēta uz tirgus cenu
+kritumu dēļ konkurences un jauno tehnoloģiju ieviešanu, kas ļauj mākoņpakalpoju sniedzējiem piedāvāt
+lētākus risinājumus. Mācību platformas pārslodzes gadījumā ir arī noteikts zems risks, kurš ir
+novēršams izmantojot industrijas standartus un tipiskos risinājumus, kā arī pielietot mākoņpakalpojumu
+elastīgo serveru uzturēšanu, kas ļauj novērtēt peiprasījumu skaitu un paaugstināt server kapacitāti, ja
+tas ir nepieciešams. Kā pēdējais risks ir pieminēts ļaundabīgu uzbrukumu gadījums gan pašai tīmekļa
+vietnei ar tā saucāmiem DDOS uzbrukumiem, gan nekvalitatīvi izstrādāta programmatūra, kā novēršana
+šim riskam tiek arī ieteikts izmantot industrijas standartus, kā arī pārliecināties par drošību
+izmantojot OWASP tīmekļa vietnē izvietos ieteikumus.
+%TODO ielikt atsauci uz OWASP
+\par
+Tiesiskos riskos tiek novērota neliela starpība dēļ projekta alternatīvu realizācijas. Uz B
+alternatīvu ir daudz lielāka ietekme no valsts sektora, jo tas plāno sadarboties ar skolām, kas
+automatiski iesaista \acrshort{izm} un tās padoto \acrshort{visc}. \acrshort{visc} prasību
+neatbilstība būtība pilnībā var nobloķēt projektu, taču risks ir novērtēs kā zems, jo ar
+\acrshort{visc} ir izveidojusies jau ilgstoša sadarbība. Lai novērstu šo risku autors piedāvā
+veicināt vēl vairāk sadarbību ar \acrshort{visc} un skaidrot tiem šī projekta svarīgumu.
+B alternatīvai arī zems politiskais risks - valsts izglītības reformas apstādināšana un
+Skola 2030 projekta atcelšana. Tā kā šis projekts ir Eiropas finansēts un jau tiek izstrādāts
+vairākus gadus, tā termiņš ir paredzēts līdz 2030 gadam, ir ļoti maz ticama šīs reformas
+atcelšana. Tomēr ja šis risks iestāsies, autors iesaka sākt sadarbību ar individuālām skolām
+un piedāvāt sagatavotos materiālus kā bezmaksas produktu tām. Start(it) fonda dotā brīža
+vietne tieši tādā veidā jau darbojās. Protams, mūsdienās jebkuram IT izstrādātam projektam
+ir jāatcerās par \acrshort{gdpr}, jeb "\gls{gdpr}", tulkojumā - Ģenerālā datu aizsardzības
+regula. Regulas prasības ir skaidri aprakstītas un paskaidrotas, līdz ar to risks ir novērtēts
+kā zems. Lai novērstu šo risku ir nepieciešams izmantot industrijas standartus un nodrošināt
+kvalitatīvu izstrādi, šis risks ir atteicināms uz abām alternatīvām. C alternatīvai savukārt
+ir tikai vēl viens zems politiskais risks - \acrshort{nva} sadarbības atteikums. Lai mazinātu
+šī riska ietekmi tiek piedāvāts veikt ciešāku skaidrojošo darbu ar \acrshort{nva}, kā arī
+atrast citus sadarbības partnerus caur kuriem varētu popularizēt dotos materiālus.
+\par
+Personāla riski arī ir vienādi abām alternatīvām, jo personāls kopumā atbild par līdzīgu
+platformu izstrādi. Pirmais risks, kurš ir novērtēts augsts, kurš ir arī vienīgais augsti
+novērtētais risks, ir mācību materiālu izstrādātāju trūkums. Tā kā Latvijā nav liels iedzīvotāju
+skaits, tad ir samērā grūti atrast specialistus, kuri būtu pietiekoši zinoši gan datorzinātnēs,
+gan skolu pasniegšanas mākā, gan būtu gatavi sagatavot kvalitatīvus mācību materiālus. Šo risku
+ir ļoti sarežģīti novērst, autors piedāvā veikt ilgāku specialistu atlasti, kā arī censties
+apmācīt daļēji atbilstošus cilvēkus. Otrs ir zemu novērtēts risks par programmētāju kvalitātes
+un zināšanu trūkumu. Ņemot vērā ka projekta viens no patroniem ir Accenture Latvia, kurš ir
+lielākais IT uzņēmums Latvijā, tad ar šī uzņēmuma pieredzi varēs nodrošināt vajadzīgos darbiniekus.
+Protams, ir svarīgi sekot visiem ieteikumiem no industrijas puses, un tipiskiem risinājumiem.
+\par
+Kopumā riski ir samērā līdzigi, atšķirības var redzēt tiesisko risku jomā, jo alternatīvām
+ir atšķirīgas mērķauditorijas. Saimniecisko risku gan ir vairāk C alternatīvai, jo tai ir nepieciešama
+tiešā dalība un interese no mērķauditorijas, taja pašā laikā B alternatīvai mērķauditorija automatiski
+būs, jo tā fokusējās uz skolām un gala produkta ieviešanu skolās.
+\par
+Turpinājumā abas alternatīvas tiek salīdzinātas pēc stratēģisko mērķu sasniegšanas. Tiek izvirzīti
+kritēriji pēc kuriem salīdzināt dotās alternatīvas un skaidrots šo alternatīvu vērtējums.
+
 
 
