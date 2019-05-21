@@ -212,3 +212,30 @@
     \end{titlepage}
 }
 \makeatother
+
+\newcommand{\desigraph}[6]{
+  \begin{figure}[ht]
+    \label{table:#1}
+    \caption{#2}
+    \begin{tikzpicture}
+        \begin{axis}[
+            x=2cm,
+            xlabel={Gads},
+            ylabel={Vērtība},
+            xmin=2013, xmax=2019,
+            ymin=6, ymax=20,
+            xtick={2014,2015,2016,2017,2018},
+            ytick={8,10,12,14,16,18,20},
+            legend pos=north west,
+            ymajorgrids=true,
+            grid style=dashed,
+        ]
+        \addplot[color=red, mark=square] coordinates {#3};
+        \addplot[color=red, mark=circle] coordinates {#4};
+        \addplot[color=green, mark=triangle] coordinates {#5};
+        \addplot[color=black, mark=dot] coordinates {#6};
+        \legend{Latvija, Lietuva, Igaunija, EU28}
+        \end{axis}
+    \end{tikzpicture}
+  \end{figure}
+}

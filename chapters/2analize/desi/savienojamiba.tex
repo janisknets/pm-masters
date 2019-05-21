@@ -1,68 +1,25 @@
-\begin{figure}[ht]
-    \label{att:desi_savienojamiba}
-    \caption{DESI rādītāji}
-    \begin{tikzpicture}
-        \begin{axis}[
-            x=2cm,
-            xlabel={Gads},
-            ylabel={Vērtība},
-            xmin=2013, xmax=2019,
-            ymin=6, ymax=20,
-            xtick={2014,2015,2016,2017,2018},
-            ytick={8,10,12,14,16,18,20},
-            legend pos=north west,
-            ymajorgrids=true,
-            grid style=dashed,
-        ]
-        \addplot[
-            color=red, 
-            mark=square
-            ]
-            coordinates {
-                (2014,11.3305)(2015,11.3951)(2016,15.0115)(2017,15.4357)(2018,16.4)
-            };
-        \addplot[
-            color=red, 
-            mark=circle
-            ]
-            coordinates {
-                (2014,9.6959)(2015,11.6532)(2016,14.3374)(2017,15.3726)(2018,16.2237)
-            };
-        \addplot[
-            color=green, 
-            mark=triangle
-            ]
-            coordinates {
-                (2014,11.7685)(2015,12.6421)(2016,14.0537)(2017,15.5321)(2018,16.0279)
-            };
-        \addplot[
-            color=black, 
-            mark=dot
-            ]
-            coordinates {
-                (2014,11.0332)(2015,12.4053)(2016,13.478)(2017,14.6234)(2018,15.6445)
-            };
-        \legend{Latvija, Lietuva, Igaunija, EU28}
-        \end{axis}
-    \end{tikzpicture}
-\end{figure}
+\phantomsection
+\desigraph{desi_savienojamiba}{1. Savienojamība}
+    {(2014,11.3305)(2015,11.3951)(2016,15.0115)(2017,15.4357)(2018,16.4)}
+    {(2014,09.6959)(2015,11.6532)(2016,14.3374)(2017,15.3726)(2018,16.2237)}
+    {(2014,11.7685)(2015,12.6421)(2016,14.0537)(2017,15.5321)(2018,16.0279)}
+    {(2014,11.0332)(2015,12.4053)(2016,13.4780)(2017,14.6234)(2018,15.6445)}
+
+Savienojamības rādītājs veidojās no 5 rādītājiem, 1a - piekļuve platjoslas internetam (20\%)(>30Mbps),
+1b - piekļuve mobīlajam platjoslas internetam (30\%)(>30Mbps), 1c - piekļuve ātrdarbīgajam platojoslas internetam (20\%)(<100Mbps),
+1d - īpāsi ātrdarbīgā interneta piekļuve (20\%)(>100Mbps), 1e - platjoslas interneta cena (10\%)
 \par
-2017. gadā Latvijai izdevās panākt diezgan lielu progresu kopējā savienojamības
-aspektā, un tās izaugsmes temps līdzinājās ES vidējam. Attiecībā uz mājsaimniecību
-fiksētās platjoslas pārklājumu valstī vērojama stagnācija – tā joprojām atpaliek no ES
-vidējā rādītāja, ar 93\% mājsaimniecību pārklājumu Latvijai atrodoties 24. vietā.
-Jāuzsver, ka gandrīz viss pārklājums nodrošina nākamās paaudzes piekļuvi (NPP)
-(91\% mājsaimniecību) un pat ātrdarbīgo platjoslu (88\% mājsaimniecību), tādējādi
-Latviju ierindojot starp vadošajām dalībvalstīm, kuru rādītāji krietni pārsniedz ES
-vidējo. Arī 4G pārklājums Latvijā ir ļoti augsts (98\% mājsaimniecību). Ātrdarbīgās un
-īpaši ātrdarbīgās platjoslas izmantošanas līmenis arī ir ievērojami augstāks par ES
-vidējo: 42\% un 35\% mājokļu abonē ātrdarbīgas un īpaši ātrdarbīgas platjoslas
-pakalpojumus, kas attiecīgi Eiropas Savienībā vidēji ir 33\% un 15,4\%. Tomēr,
-neskatoties uz nelielu pieaugumu 2017. gadā, kopējā fiksētās platjoslas izmantošana
-Latvijā vēl aizvien ir mazliet zem ES vidējā rādītāja. Šo tendenci zināmā mērā 
-Digitālās ekonomikas un sabiedrības indekss 2018, ziņojums par Latviju. lpp. 4 no 11
-kompensē daudz straujākais mobilās platjoslas pieslēgumu pieaugums, jo ir plašas
-iespējas izvēlēties datu plānus par pieejamām cenām.
+Latvija kopumā ir labāki rādītāji nekā Eiropā. Uz doto brīdi 1a rādītāja Latvija atpaliek
+no Eiropas rādītājiem. Tas ir izskaidrojams ar to ka jau vairāk nekā 93\% iedzīvotājiem
+ir piekļuve pie platojoslas interneta, pārējie 7\% ir ārpus pilsētām, privātmājas, lauku mājas utml,
+tādas vietas, uz kurām nav izdevīgi veikt tiešo pieslēgumu, jo Latvijā ir ļoti labs
+4G mobilā tīkla pārklājums, kā arī Latvijas Mobīlais telefons piedalās aktīvā 5G tīkla
+attīstībā. LĪdz ar to 1b rādītāji Latvijai ir salīdzinoši labi, taču ja vērtēšana būtu
+striktāka, tad Latvija noteikti izceltos uz Eiropas līmeņa. Latvijai ir labākais rādītājs
+atrdarbīgā un īpaši ātrdarbīgā platjoslas interneta rādītāja (1c un 1d). Apsteidzot gan kaimiņus,
+gan Eiropu kopumā. Daļēji tam palīdz iedzīvotāju koncetrēšanos ap vienu lielo centru - 
+Rīgas pilsētu, taču kopējie rādītāji visā valstī ir salīdzinoši labi.
+
 \par
 “Vidējās jūdzes projekts”, kas tika sākts 2012. gadā un kam piešķirts līdzfinansējums
 no ES struktūrfondiem, lai lauku teritorijas savienotu ar valsts pamatinfrastruktūru,
@@ -81,10 +38,9 @@ ierīcēm, izmantot mobilo operatoru nodrošinātos fiksētos sakaru pakalpojumu
 palīdz pārvarēt šo plaisu atsevišķos lauku apvidos, kur netiek veiktas investīcijas
 “pēdējās jūdzes” savienojumos\cite{platjosla}
 \par
-Optiskā tīkla izveidē un 4G pakalpojumu ieviešanā Latvija ir izvirzījusies starp
-līderiem. Tomēr joprojām problemātiska ir digitālā plaisa, kas izveidojusies starp
-pilsētu un laukiem. Lai to novērstu, praktisku labumu var sniegt nesen pieņemtie
-noteikumi, ar kuriem tiek transponēta Platjoslas izmaksu samazināšanas direktīva.
-Turklāt, lai nākotnē neatpaliktu no straujās savienojamības attīstības, visiem tirgus
-dalībniekiem jābūt savlaicīgi pieejamiem piemērotiem spektra blokiem agrīnai 5G
-tīkla izmēģināšanai un izvēršanai.
+Lai novērstu izveidojošos plaisu piekļuvē starp pilsētām un laukiem tika 
+pieņemta direktīva par Platjoslas izmaksu samazināšanu. Kā arī liels uzvasrs tiek
+likts uz 5G tīklu un viņa iespējām tieši laukos, kur nav tik daudz citu objektu, kuri 
+bloķētu signāla pārraidi. Attiecīgi antenu skaitam būtu jābūt mazākam, nekā tas ir
+nepieciešams pilsētās.
+
